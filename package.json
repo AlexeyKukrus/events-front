@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@pbe/react-yandex-maps": "^1.2.5",
     "next": "15.4.6",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "yandex-maps": "^0.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

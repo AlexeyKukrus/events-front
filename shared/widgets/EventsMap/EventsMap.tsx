@@ -1,21 +1,10 @@
 'use client';
 
-import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
-
 import styles from './EventsMap.module.css';
-import { mockEvents } from '@/entities/model/mockEvents';
+import { useYandexMap } from '@/shared/hooks/useYandexMap';
+
 
 export function EventsMap() {
-  return (
-    <YMaps>
-      <Map
-        defaultState={{ center: [55.796289, 49.108795], zoom: 12 }}
-        className={styles.map}
-      >
-        {mockEvents.map(event => (
-          <Placemark key={event.id} geometry={event.coordinates} />
-        ))}
-      </Map>
-    </YMaps>
-  );
+  const mapRef = useYandexMap([55.751574, 37.573856], 10);
+  return <div ref={mapRef} className={styles.map} />;
 }
