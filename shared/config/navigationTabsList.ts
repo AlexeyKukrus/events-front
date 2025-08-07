@@ -6,8 +6,26 @@ export type NavigationTabsList = {
 }
 
 export const navigationTabsList: NavigationTabsList[] = [
-  { href: '/events', icon: '/icons/home.svg', label: 'События', mobileIcon:'/icons/home_black.svg' },
-  { href: '/event/create', icon: '/icons/plus_circle.svg', label: 'Создать', mobileIcon:'/icons/plus_circle_black.svg' },
-  { icon: '/icons/chat.svg', label: 'Чат', mobileIcon:'/icons/chat_black.svg' },
-  { icon: '/icons/notifications.svg', label: 'Уведомления', mobileIcon:'/icons/notifications_black.svg' },
+  { 
+    href: '/events', 
+    icon: '/icons/home.svg', 
+    mobileIcon:'/icons/home_black.svg', 
+    label: 'События', 
+  },
+  { 
+    href: '/event/create', 
+    icon: '/icons/plus_circle.svg', 
+    mobileIcon:'/icons/plus_circle_black.svg',
+    label: 'Создать', 
+  },
+  { 
+    icon: '/icons/chat.svg', 
+    mobileIcon:'/icons/chat_black.svg',
+    label: 'Чат', 
+  },
+  { 
+    icon: '/icons/notifications.svg', 
+    mobileIcon:'/icons/notifications_black.svg', 
+    label: 'Уведомления', 
+  },
 ];
