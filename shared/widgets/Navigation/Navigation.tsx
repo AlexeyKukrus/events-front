@@ -1,9 +1,10 @@
 'use client';
 
-import { navigationTabsList } from '@/shared/config/navigationTabsList';
-import styles from './Navigation.module.css';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { navigationTabsList } from '@/shared/config/navigationTabsList';
+import Link from 'next/link';
+import styles from './Navigation.module.css';
+
 
 export default function Navigation() {
   const pathname = usePathname() || '';

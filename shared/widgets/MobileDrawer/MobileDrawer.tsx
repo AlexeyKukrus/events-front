@@ -1,9 +1,10 @@
 'use client';
 
-import styles from './MobileDrawer.module.css';
 import { usePathname } from 'next/navigation';
-import Link from 'next/link';
 import { navigationTabsList } from '@/shared/config/navigationTabsList';
+import Link from 'next/link';
+import styles from './MobileDrawer.module.css';
+
 
 interface Props {
   isOpen: boolean;

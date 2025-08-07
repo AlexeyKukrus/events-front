@@ -1,16 +1,13 @@
 'use client'
-import './globals.css';
-import Navigation from '@/shared/widgets/Navigation/Navigation';
+
 import { ReactNode } from 'react';
-import './globals.css';
 import { useMediaQuery } from '@/shared/hooks/useMediaQuery';
+import Navigation from '@/shared/widgets/Navigation/Navigation';
 import MobileHeader from '@/shared/widgets/MobileHeader/MobileHeader';
-
-
-
+import './globals.css';
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isMobile = useMediaQuery('(max-width: 1024px)');
 
   return (
     <html lang="ru">
