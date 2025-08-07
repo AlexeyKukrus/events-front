@@ -1,0 +1,68 @@
+.drawer {
+  position: fixed;
+  top: 45px;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: var(--color-bg);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease;
+  z-index: 100;
+}
+
+.open {
+  left: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 99;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.activeIcon {
+  width: 24px;
+  height: 24px;
+  filter: none;
+  color: #FFD700;
+}
+
+.label {
+  font-weight: 500;
+}
